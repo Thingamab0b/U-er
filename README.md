@@ -9,6 +9,7 @@
   2) 显示时间  
   3) 播放音乐，显示频谱  
   4) 播放视频  
+  5) 三维扫描
   
   **材料**  
   1) Arduino Uno *1   
@@ -16,7 +17,8 @@
   3) DS1307 时钟模块 *1  
   4) SD卡读写模块 *1
   5) 公母杜邦线若干 
-  6) 3D打印外壳一个  
+  6) 压力传感器*1
+  7) 3D打印外壳一个  
  
 ## Module&Function
 ### 1. Voice Technology
@@ -56,7 +58,7 @@
 #### 2.2 Frequency Spectrum   
   呜呜呜还没做出来（我的声音传感器模块还没到，等填坑）  
 #### 2.3 Time-Showing   
-  用到了DS1307时钟模块（还没到货），但是已经把显示部分做好了。基本步骤和Kaomoji差不多，首先把几个数字的字模取了，然后变成数组，然后再读入(因为我的4*3点阵没有对应的库可以用，用了也是乱码....所以所有代码都是纯手写的，了解了底层原理以后写的。通用性不是很强）   
+  用到了DS1307时钟模块。基本步骤和Kaomoji差不多，首先把几个数字的字模取了，然后变成数组，然后再读入(因为我的4*3点阵没有对应的库可以用，用了也是乱码....所以所有代码都是纯手写的，了解了底层原理以后写的。通用性不是很强）   
   [Time-Showing](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/Time-Showing)  
   Ref:[Arduino IeC+DS1307](https://www.cnblogs.com/zlbg/p/4227428.html)   
   [DS1307模块使用](https://www.arduino.cn/thread-23595-1-1.html)
@@ -69,4 +71,5 @@
 
 ## 关键技术 
 ### 1. matlab与arduino串口通信
+[matlab串口通信]http://blog.sina.cn/dpool/blog/s/blog_7ae27eb10101ommi.html?vt=4
 未完待续
