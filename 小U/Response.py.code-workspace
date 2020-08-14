@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\OJ"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp",
+			"cstdint": "cpp"
+		},
+		"git.ignoreLimitWarning": true
+	}
+}
