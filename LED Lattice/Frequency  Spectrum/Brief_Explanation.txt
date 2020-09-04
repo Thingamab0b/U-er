@@ -1,0 +1,4 @@
+The last part of LED Lattice!
+Main Peripheral device: MAX4466 (Microphone collecting the sound)
+Using the FFT library, I decomposed the frequency of the sound into 32 parts (corresponding to 32 columns), and the amplitude into 8 parts(corresponding to 24 rows).
+I'm planing to use it to hence the visual effect of the music-playing function. 
