@@ -8,14 +8,13 @@
   1) 聊天（有丰富表情和傲娇声音，就是反应有点迟钝orz)  
   2) 显示时间  
   3) 播放音乐，显示频谱  
-  4) 播放视频  
-  5) 三维扫描
+  4) 三维扫描
   
   **材料**  
   1) Arduino Uno *1   
   2) MAX7219 4*1 (LED点阵模块) *3   
   3) DS1307 时钟模块 *1  
-  4) SD卡读写模块 *1
+  4) 声音传感器 MAX4466 *1
   5) 公母杜邦线若干 
   6) 压力传感器*1
   7) 3D打印外壳一个  
@@ -56,18 +55,27 @@
   Step3: 用手把表情点进去，生成32*24位图.... 最后用了[八个表情](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/%E5%AD%97%E6%A8%A1/My_kaomoji)
   Step4: 转换成数组，然后编个程序使灯变亮
 #### 2.2 Frequency Spectrum   
-  呜呜呜还没做出来（我的声音传感器模块还没到，等填坑）  
+  使用了声音传感器MAX4466.  处理过程用了arduino自带的FFT库，没有用点阵库，手写了一波qwq，效果还行。打算随机播放音乐的过程用声音传感器接受声音，然后就可以做到播放任意歌曲了。
+  缺点是只要声源和话筒距离30cm以上检测到的信号就会比较微弱，然后话筒朝向也对效果有很大的影响。
+  [Frequncy Spectrum]
+  Ref:[MAX4466T](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/Frequency%20%20Spectrum/arduino-sound-sensor-with-wifi-master/arduino-sound-sensor-with-wifi-master)  
+  [FFT](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/Frequency%20%20Spectrum/Arduino-audio-spectrum-visualizer-analyzer-master)
+  
 #### 2.3 Time-Showing   
   用到了DS1307时钟模块。基本步骤和Kaomoji差不多，首先把几个数字的字模取了，然后变成数组，然后再读入(因为我的4*3点阵没有对应的库可以用，用了也是乱码....所以所有代码都是纯手写的，了解了底层原理以后写的。通用性不是很强）   
   [Time-Showing](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/Time-Showing)  
   Ref:[Arduino IeC+DS1307](https://www.cnblogs.com/zlbg/p/4227428.html)   
   [DS1307模块使用](https://www.arduino.cn/thread-23595-1-1.html)
-#### 2.4 Video-Showing
+#### 2.4 Video_Showing
   俗话说有屏幕的地方就有badapple....为了致敬经典（×，我决定赋予这块32*24的屏幕以精髓...当然也可以放一些GIF图之类的   
   Step1：视频取帧，导成数组[取帧程序](https://github.com/Thingamab0b/U-er/tree/master/LED%20Lattice/Video-Showing)  
-  Step2: 存进SD卡，等待程序读取   
-### 3. 3D打印外壳
+  Step2: 存进SD卡，等待程序读取  
+  
+Postscript:
+  好了事实证明这块板子的确带不动....读取速度太慢导致错位，这个功能放弃。 
 
+### 3. 3D打印外壳
+  已经交给partner做了，白嫖学校的3D打印机。期待成型。
 
 ## 关键技术 
 ### 1. matlab与arduino串口通信
