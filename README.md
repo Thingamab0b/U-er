@@ -79,5 +79,27 @@ Postscript:
 
 ## 关键技术 
 ### 1. matlab与arduino串口通信
-[matlab串口通信]http://blog.sina.cn/dpool/blog/s/blog_7ae27eb10101ommi.html?vt=4
+[matlab串口通信](http://blog.sina.cn/dpool/blog/s/blog_7ae27eb10101ommi.html?vt=4)
+
+
+## 学习资料整理
+[I2C、SPI、USRT、USRAT通信方式对比](https://blog.csdn.net/contiune/article/details/53490698)   
+[小学生都能看懂的FFT！！](https://www.cnblogs.com/RabbitHu/p/FFT.html)    
+[【语音识别】从入门到精通——最全干货大合集！](https://yq.aliyun.com/articles/665231)   
+[有趣的开源软件：语音识别工具Kaldi (一)](https://blog.csdn.net/AMDS123/article/details/70313780)   
+[语音特征参数MFCC提取过程详解](https://blog.csdn.net/jojozhangju/article/details/18678861)    
+[从零开始学MATLAB](https://www.bilibili.com/video/BV1hJ411k7z1?p=9)    
+[51单片机模拟音乐详解](https://blog.csdn.net/shy_0001/article/details/78513544)    
+[API入门教程](https://www.bilibili.com/video/BV1rJ411j7cc?p=1)    
+[小甲鱼，零基础入门学习](https://www.bilibili.com/video/BV1xs411Q799?from=search&seid=4047955534569624060)   
+[Arduino UNO：SD/TF卡扩展模块的使用](https://blog.csdn.net/king_mountian/article/details/79638769)   
+[SD卡存储数组数据（非字符或字符串）](https://www.arduino.cn/thread-83020-2-1.html)    
+[Write an array to SD](https://arduino.stackexchange.com/questions/68258/write-an-array-to-sd#)   
+[Word Embedding 知识总结](https://blog.csdn.net/savinger/article/details/89308831)  
+[Arduino开发板使用TFT LCD液晶显示屏的终极新手入门指南](https://www.yiboard.com/thread-1060-1-1.html)   
+[Arduino2.4英寸TFT显示屏的演示](http://www.elecfans.com/d/1077423.html)
+
+
+## 心得体会 
+
 未完待续
