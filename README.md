@@ -98,6 +98,8 @@ Postscript:
 [Word Embedding 知识总结](https://blog.csdn.net/savinger/article/details/89308831)  
 [Arduino开发板使用TFT LCD液晶显示屏的终极新手入门指南](https://www.yiboard.com/thread-1060-1-1.html)   
 [Arduino2.4英寸TFT显示屏的演示](http://www.elecfans.com/d/1077423.html)
+[录制和播放音频Matlab](https://ww2.mathworks.cn/help/matlab/import_export/record-and-play-audio.html#bsdl2fs-1)    
+
 
 
 ## 心得体会 
